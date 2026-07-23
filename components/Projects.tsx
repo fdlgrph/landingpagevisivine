@@ -35,7 +35,7 @@ export default function Projects() {
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <motion.div
                   variants={{ hover: { scale: 1.08 } }}
-                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
                   className="h-full w-full"
                 >
                   <Image
