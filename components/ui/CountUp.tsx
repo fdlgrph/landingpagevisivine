@@ -21,7 +21,7 @@ export default function CountUp({
     if (!isInView) return;
     const controls = animate(motionValue, value, {
       duration,
-      ease: [0.16, 1, 0.3, 1],
+      ease: [0.16, 1, 0.3, 1] as const,
       onUpdate: (v) => setDisplay(Math.round(v)),
     });
     return () => controls.stop();
